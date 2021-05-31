@@ -35,10 +35,10 @@ int main(void) {
     }
   }
 }
-float mc_pi(int k){
+float mc_pi(int n){
     float x,y;
     int a_circle=0;
-    for(int j=1;j<k;j++){
+    for(int j=1;j<n;j++){
          x=frandom();
          y=frandom();
          float distance=sqrt((float)((x*x)+(y*y)));
@@ -46,7 +46,7 @@ float mc_pi(int k){
              a_circle=a_circle+1;
          }
     }
-    return 4*((float)a_circle/(float)k);    
+    return 4*((float)a_circle/(float)n);    
 }
 
 
